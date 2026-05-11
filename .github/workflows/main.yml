@@ -1,0 +1,16 @@
+name: Debug Workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Run Wrong File
+        run: node wrongfile.js
