@@ -13,4 +13,4 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: Run Wrong File
-        run: node wrongfile.js
+        run: node app.js
